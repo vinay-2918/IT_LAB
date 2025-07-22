@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Calculator</h2>
+  Enter 1st Number: <input type="text" id="num1"><br>
+  Enter 2nd Number: <input type="text" id="num2"><br><br>
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+  <script>
+    function calculate() {
+      let a = parseFloat(document.getElementById("num1").value);
+      let b = parseFloat(document.getElementById("num2").value);
+      let res = `Add: ${a + b}, Sub: ${a - b}, Mul: ${a * b}, Div: ${a / b}`;
+      document.getElementById("result").innerText = res;
+    }
+  </script>
+</body>
+</html>
